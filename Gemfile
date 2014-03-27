@@ -33,3 +33,6 @@ group :doc do
 end
 
 gem 'pg'
+
+gem 'ember-rails'
+gem 'ember-source', '1.4.0' # or the version you need
