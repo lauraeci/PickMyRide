@@ -1,0 +1,2 @@
+module EdmundsHelper
+end
