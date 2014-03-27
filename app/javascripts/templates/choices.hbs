@@ -1,0 +1,11 @@
+<h1>Choices</h1>
+
+<ul>
+  {{#each itemController="choice"}}
+    <li>{{#linkTo "choice" this}}{{title}}{{/linkTo}}</li>
+  {{else}}
+    <li>There are no choices.</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
