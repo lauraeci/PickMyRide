@@ -1,0 +1,56 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <title>Ember.js • Decidedly</title>
+</head>
+<body>
+<script type="text/x-handlebars" data-template-name="choices">
+  <section id="pick-my-ride">
+    <header id="header">
+      <h1>choices</h1>
+      <input type="text" id="new-choice" placeholder="Enter a new item you are considering or choose from below:" />
+    </header>
+
+    <section id="main">
+      <ul id="choice-list">
+        <li>
+          <input type="checkbox" class="toggle">
+          <label>BMW</label><button class="destroy"></button>
+        </li>
+        <li>
+          <input type="checkbox" class="toggle">
+          <label>VW</label><button class="destroy"></button>
+        </li>
+        <li>
+          <input type="checkbox" class="toggle">
+          <label>Toyota</label><button class="destroy"></button>
+        </li>
+      </ul>
+
+      <input type="checkbox" id="toggle-all">
+    </section>
+
+    <footer id="footer">
+        <span id="choice-count">
+          <strong>3</strong> choices
+        </span>
+      <ul id="filters">
+        <li>
+          <a href="all" class="selected">All</a>
+        </li>
+      </ul>
+
+      <button id="compare-selected">
+        Compare selected (1)
+      </button>
+    </footer>
+  </section>
+
+  <footer id="info">
+    <p>Double-click to edit a choice</p>
+  </footer>
+
+</script>
+</body>
+</html>

@@ -17,21 +17,21 @@
 //= require ember
 //= require ember-data
 //= require_self
-//= require decidedly
+//= require pickmyride
 
 // for more details see: http://emberjs.com/guides/application/
-Decidedly = Ember.Application.create({
-    rootElement: '#decidedly'
+Pickmyride = Ember.Application.create({
+    rootElement: '#pick-my-ride'
 });
 
-Decidedly.Choices = Ember.Object.extend();
+Pickmyride.Choices = Ember.Object.extend();
 
-Decidedly.Choices.reopenClass({
+Pickmyride.Choices.reopenClass({
     all:function () {
         var choices = [];
         return $.getJSON("/api/v1.choices_controller.json").then(function (response) {
             response.choices.forEach(function (choices) {
-                choices.push(Decidedly.Choices.create(choices));
+                choices.push(Pickmyride.Choices.create(choices));
             });
         });
         return choices;

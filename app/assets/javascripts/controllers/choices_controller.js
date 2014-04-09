@@ -1,4 +1,4 @@
-Decidedly.ChoicesController = Ember.ArrayController.extend({
+Pickmyride.ChoicesController = Ember.ArrayController.extend({
     actions: {
         createChoice: function () {
             // Get the choice title set by the "New Choice" text field

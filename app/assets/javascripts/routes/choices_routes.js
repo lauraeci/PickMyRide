@@ -1,4 +1,4 @@
-Decidedly.ChoicesRoute = Ember.Route.extend({
+Pickmyride.ChoicesRoute = Ember.Route.extend({
     model: function() {
         return this.store.findAll('choice');
     }
