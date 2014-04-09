@@ -21,7 +21,7 @@
 
 // for more details see: http://emberjs.com/guides/application/
 Pickmyride = Ember.Application.create({
-    rootElement: '#pick-my-ride'
+//    rootElement: '#pick-my-ride'
 });
 
 Pickmyride.Choices = Ember.Object.extend();
