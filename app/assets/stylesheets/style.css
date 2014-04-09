@@ -2,3 +2,24 @@
 .ember-application {
     margin: 20px;
 }
+
+#main {
+    border-width: 2px;
+    border-color: red;
+    height: 320px;
+    width: 640px;
+}
+
+#choice-list {
+    width: 100%;
+    height: 180px;
+    list-style: none;
+}
+
+.car-container {
+    border-width: 2px;
+    border-color: black;
+    display: inline-block;
+    width: 33%;
+    float: left;
+}

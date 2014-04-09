@@ -5,45 +5,44 @@
   </header>
 
   <div id="main">
-    <ul id="choice-list">
-      <li>
-        <input type="checkbox" class="toggle">
+    <div id="choice-list">
+      <div class="car-container">
         <label>BMW</label>
         <button class="destroy"></button>
-        `
-      </li>
-      <li>
-        <input type="checkbox" class="toggle">
+      </div>
+
+      <div class="car-container">
         <label>VW</label>
         <button class="destroy"></button>
-      </li>
-      <li>
-        <input type="checkbox" class="toggle">
+      </div>
+
+      <div class="car-container">
         <label>Toyota</label>
         <button class="destroy"></button>
-      </li>
-    </ul>
+      </div>
 
+
+    </div>
+    <label>Destroy all</label>
     <input type="checkbox" id="toggle-all">
-  </div>
 
-  <footer id="footer">
+    <footer id="footer">
         <span id="choice-count">
           <strong>3</strong> choices
         </span>
-    <ul id="filters">
-      <li>
-        <a href="all" class="selected">All</a>
-      </li>
-    </ul>
+      <ul id="filters">
+        <li>
+          <a href="all" class="selected">All</a>
+        </li>
+      </ul>
 
-    <button id="compare-selected">
-      Compare selected (1)
-    </button>
-  </footer>
+      <button id="compare-selected">
+        Compare selected (1)
+      </button>
+    </footer>
+  </div>
 </div>
 
 <footer id="info">
   <p>Double-click to edit a choice</p>
 </footer>
-</script>
