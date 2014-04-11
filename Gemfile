@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
 # Use SCSS for stylesheets
@@ -33,7 +31,18 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+group :test do
+  # gem 'mongoid-rspec', '>= 1.6.0'
+  gem 'rspec-rails', '~> 3.0.0.beta'  
+end
+
 gem 'pg'
 
 gem 'ember-rails'
 gem 'ember-source', '1.4.0' # or the version you need
+
+gem 'mongoid-paperclip', require: 'mongoid_paperclip'
+
+gem 'sqlite3'
+gem 'mongoid'
+gem 'bson_ext'
