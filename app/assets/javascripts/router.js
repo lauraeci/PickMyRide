@@ -1,7 +1,7 @@
 // For more information see: http://emberjs.com/guides/routing/
 
 Pickmyride.Router.map(function() {
-    this.resource("choice", function() {
-        this.resource("choice", { path: ":choice_id" });
+    this.resource("choices", function() {
+        this.resource("choices", { path: ":choice_id" });
     });
 });
