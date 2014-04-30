@@ -1,5 +1,6 @@
 module Resource
   class API
+
     include HTTParty
 
     #alias_method :has_many, :to_many

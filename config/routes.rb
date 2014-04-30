@@ -4,9 +4,7 @@ PickMyRide::Application.routes.draw do
   resource :choices
   root 'welcome#index'
   get 'welcome', to: 'welcome#index'
-  resources :api do
-    get 'sync'
-  end
+  get 'api', to: 'api#sync'
 
   match "/*path" => 'welcome#index', via: [:get]
 
