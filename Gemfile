@@ -14,6 +14,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'her'
 gem 'memcached'
+gem 'httparty'
 
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -35,9 +36,13 @@ end
 
 group :production do
   gem 'rails_12factor', '0.0.2'
+  gem 'pg'
 end
 
-gem 'pg'
+#gem 'mongo_mapper', :git => "git://github.com/mongomapper/mongomapper.git", :tag => "v0.13.0.beta2"
+gem 'mongoid', '4.0.0.beta1'
+gem 'bson_ext'
+
 
 gem 'ember-rails'
 gem 'ember-source', '1.4.0' # or the version you need

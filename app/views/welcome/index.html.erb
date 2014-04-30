@@ -1,11 +1,13 @@
 <div id="pick-my-ride">
   <header id="header">
-    <h1>choices</h1>
-    <input type="text" id="new-choice" placeholder="Enter a new item you are considering or choose from below:"/>
+
   </header>
 
-  <div id="main">
-    <div id="choice-list">
+  <div id="main" class="container">
+    <h1>choices</h1>
+    <input type="text" id="new-choice" placeholder="Enter a new item you are considering or choose from below:"/>
+
+    <div id="choice-list" class="row">
       <div class="car-container">
         <label>BMW</label>
         <button class="destroy"></button>
@@ -22,11 +24,11 @@
       </div>
 
 
+      <label>Destroy all</label>
+      <input type="checkbox" id="toggle-all">
     </div>
-    <label>Destroy all</label>
-    <input type="checkbox" id="toggle-all">
 
-    <footer id="footer">
+    <footer id="footer" class="container">
         <span id="choice-count">
           <strong>3</strong> choices
         </span>
@@ -39,10 +41,7 @@
       <button id="compare-selected">
         Compare selected (1)
       </button>
+      <p>Double-click to edit a choice</p>
     </footer>
   </div>
 </div>
-
-<footer id="info">
-  <p>Double-click to edit a choice</p>
-</footer>

@@ -1,0 +1,24 @@
+defaults: &defaults
+  host: 0.0.0.0
+  port: 27017
+  options:
+    w: 1
+    pool_size: 1
+    slave_ok: false
+    ssl: false
+
+development:
+  <<: *defaults
+  database: pick_my_ride_development
+
+test:
+  <<: *defaults
+  database: pick_my_ride_test
+  w: 0
+
+# set these environment variables on your prod server
+production:
+  <<: *defaults
+  database: pick_my_ride
+  username: <%= ENV['MONGO_USERNAME'] %>
+  password: <%= ENV['MONGO_PASSWORD'] %>
