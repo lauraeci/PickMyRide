@@ -1,6 +1,6 @@
 development:
   sessions:
     default:
-      database: mongoid
+      database: pick_my_ride_development
       hosts:
-        - localhost: 27017
+        - 0.0.0.0:27017

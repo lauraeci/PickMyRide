@@ -6,5 +6,6 @@ class Year
 
   field :id, type: Integer
   field :name, type: Integer
+  field :year, type: Integer
   field :model_id, type: String
 end
