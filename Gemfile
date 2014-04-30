@@ -39,7 +39,6 @@ group :production do
   gem 'pg'
 end
 
-gem 'mongo'
 gem 'mongo_mapper', :git => "git://github.com/mongomapper/mongomapper.git", :tag => "v0.13.0.beta2"
 gem 'mongoid'
 gem 'bson_ext'
