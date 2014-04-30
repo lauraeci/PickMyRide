@@ -1,2 +1,4 @@
-class Choice < ActiveRecord::Base
+class Choice
+  include Mongoid::Document
+  include Mongoid::Timestamps
 end
