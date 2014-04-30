@@ -1,4 +1,4 @@
-class VehicleModel < Resource::API
+class Model < Vehicle::API
   include Mongoid::Document
   include Mongoid::Timestamps
 

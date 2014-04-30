@@ -1,4 +1,4 @@
-class Style < Resource::API
+class Style < Vehicle::API
   include Mongoid::Document
   include Mongoid::Timestamps
   #https://api.edmunds.com/api/vehicle/v2/styles/3869/equipment?fmt=json&api_key=paqqtuhsazun2gm32mg976tr

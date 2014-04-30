@@ -3,16 +3,16 @@ class ApiController < ApplicationController
   end
 
   def sync
-    json = VehicleMake.all
+    json = Make.all
     json['makes'].each do |make|
-      vehicle_make = VehicleMake.new
+      vehicle_make = Make.new
       vehicle_make.id = make["id"]
-      vehicle_make.niceName = make["niceName"]
+      vehicle_make.niceName = make["niceNa`me"]
       vehicle_make.name = make["name"]
       vehicle_make.save
 
       make["models"].each do |model|
-          vehicle_model = VehicleModel.new
+          vehicle_model = Model.new
           vehicle_model.make_id = vehicle_make.id
           vehicle_model.id = model["id"]
           vehicle_model.niceName = model["niceName"]

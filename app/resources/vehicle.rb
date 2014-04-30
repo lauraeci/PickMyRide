@@ -1,4 +1,4 @@
-module Resource
+module Vehicle
   class API
 
     include HTTParty
