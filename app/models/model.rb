@@ -11,8 +11,8 @@ class Model < Vehicle::API
 
 
      #has_many :styles
-    def self.all
-      member_url = "https://api.edmunds.com/api/vehicle/v2/#{self.make}/models?fmt=json&api_key=#{self.options[:api_key]}"
+    def self.sync
+      member_url = "#{self.base_uri}/#{self.make}/models?fmt=json&api_key=#{self.options[:api_key]}"
       response = HTTParty.get(member_url)
       JSON.parse(response.body)
     end

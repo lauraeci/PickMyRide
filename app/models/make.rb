@@ -10,11 +10,12 @@ class Make < Vehicle::API
 
   #https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=paqqtuhsazun2gm32mg976tr
 
-  @member_url = "https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=#{self.options[:api_key]}"
+  @member_url = "#{self.base_uri}/makes?fmt=json&api_key=#{self.options[:api_key]}"
 
   #has_many :vehicle_models
 
-  def self.all
+  def self.sync
+    puts @member_url
     response = HTTParty.get(@member_url)
     JSON.parse(response.body)
   end
