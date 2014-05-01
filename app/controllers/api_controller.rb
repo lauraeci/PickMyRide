@@ -3,7 +3,7 @@ class ApiController < ApplicationController
   end
 
   def sync
-    json = Make.all
+    json = Make.sync
     json['makes'].each do |make|
       vehicle_make = Make.new
       vehicle_make.id = make["id"]
